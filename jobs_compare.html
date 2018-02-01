@@ -5,12 +5,15 @@
     <meta charset='utf-8'>
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
-    <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="https://gitcdn.github.io/bootstrap-toggle/2.2.2/css/bootstrap-toggle.min.css" >
-    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet">
-    <script src="http://code.jquery.com/jquery-latest.min.js" type="text/javascript"></script>
-    <script src="https://gitcdn.github.io/bootstrap-toggle/2.2.2/js/bootstrap-toggle.min.js"></script>
+
+    <link rel="stylesheet" href="static/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="static/styles.css">
+    
+    <link href="static/font-awesome.min.css" rel="stylesheet">
+    <script src="static/jquery-latest.min.js" type="text/javascript"></script>
+
+    <link rel="stylesheet" href="static/bootstrap-toggle/bootstrap-toggle.min.css" >
+    <script src="static/bootstrap-toggle/bootstrap-toggle.min.js"></script>
     <title>Skillscape</title>
     <style>
     body {
@@ -94,7 +97,7 @@
     </style>
     <link href='https://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'>
     <script type="text/javascript" src="json files/job_categories.js"></script>
-    <script type="text/javascript" src="bootstrap/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="static/bootstrap/js/bootstrap.min.js"></script>
 </head>
 
 <body>
@@ -235,28 +238,9 @@
                     .attr("x", 13)
                     .attr("y", 20 )
                     .text("RCA");        
-                    
-                    
-                /*lengendcircle.append("line")
-                    .attr("x1", sizes[sizes.length - 1])
-                    .attr("y1", 0)
-                    .attr("x2", 62)
-                    .attr("y2", 0)
-                    .attr('stroke', 'black')
-
-                lengendcircle.append("line")
-                    .attr("x1", sizes[sizes.length - 1])
-                    .attr("y1", 0 + 2 * (sizes[sizes.length - 1] - sizes[0]))
-                    .attr("x2", 62)
-                    .attr("y2", 0 + 2 * (sizes[sizes.length - 1] - sizes[0]))
-                    .attr('stroke', 'black')
-                */    
-
 
             }
         }
-
-
 
         ///////////////////////////////////////////////////////////////////////////
 
@@ -837,22 +821,6 @@
 
                 });
             // update tooltip
-            /*
-            nodeupdate
-                .on("mouseover", function(d) {
-                    div.transition()
-                        .duration(200)
-                        .style("opacity", 0.9);
-                    div.html("<b>" + d.name + "</b>") //</br>RCA: " + tempObject[d.name])
-                        .style("left", (d3.event.pageX) + "px")
-                        .style("top", (d3.event.pageY - 28) + "px");
-                })
-                .on("mouseout", function(d) {
-                    div.transition()
-                        .duration(500)
-                        .style("opacity", 0);
-                });
-            */    
             //change if auto toggle selected
             if (!on) {
                 nodeupdate
